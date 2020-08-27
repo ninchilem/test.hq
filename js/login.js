@@ -1,0 +1,1 @@
+"use strict";$(function(){$("form").submit(function(){return $names=$(".txt").val(),$pw=$(".pw").val(),$.ajax({url:"../pages/user.php",data:{username:$names,password:$pw},success:function(t){"null"!=t?document.location.href="./mi.html":alert("请滚！！！")}}),!1})});
